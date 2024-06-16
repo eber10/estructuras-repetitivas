@@ -5,13 +5,14 @@ int main()
 {
     int gasto;
     double suma=0;
-    string resp;
+    string resp, nombre;
     cout<<"BIENVENIDO AL SISTEMA"<<endl;
     cout<<"*********************"<<endl;
+    cout<<"Ingrese su nombre: "; cin>>nombre;
     do
     {
         cout<<"Ingrese un gasto: "; cin>>gasto;
-        cout<<"Desea seguir ingresando gastos (si/no)? : "; cin>>resp;
+        cout<<nombre<<" "<<"desea seguir ingresando gastos (si/no)? : "; cin>>resp;
         suma=suma+gasto;
     }
     while(resp=="si");
