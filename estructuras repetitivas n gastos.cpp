@@ -16,6 +16,7 @@ int main()
         suma=suma+gasto;
     }
     while(resp=="si");
-    cout<<" gasto total: S/. " <<suma;
+    cout<<" gasto total: S/. " <<suma<<endl;
+    cout<<"GRACIAS POR USAR NUESTRO SISTEMA DE CALCULOS ";
     return 0;
 }
