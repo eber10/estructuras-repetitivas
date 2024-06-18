@@ -6,9 +6,11 @@ int main()
 	int op;
     double gasto;
     double suma=0;
-    string resp, nombre;
+    string resp, nombre, user, clave;
     cout<<"BIENVENIDO AL SISTEMA"<<endl;
     cout<<"*********************"<<endl;
+    cout<<"USUARIO: "; cin>>user;
+    cout<<"CLAVE: "; cin>>clave;
     do
     {
     	cout<<"1. sumar "<<endl;
