@@ -1,11 +1,11 @@
-#include<iostream>
-#include<string>
+#include<bits/stdc++.h>
 using namespace std;
 int main()
 {
-	int op;
-    double gasto;
+	int op, cont;
+    double gasto, historial[100];
     double suma=0;
+    int i=0;
     string resp, nombre, user, clave;
     cout<<"BIENVENIDO AL SISTEMA"<<endl;
     cout<<"*********************"<<endl;
@@ -14,7 +14,7 @@ int main()
     do
     {
     	cout<<"1. sumar "<<endl;
-    	cout<<"2. multiplicar "<<endl;
+    	cout<<"2. historial"<<endl;
     	cout<<"0. salir "<<endl;
     	cin>>op;
     	switch(op)
@@ -29,8 +29,22 @@ int main()
 				}
 				while(resp=="si");
 				cout<<" gasto total: S/. " <<suma<<endl;
+				
+				historial[i]=suma;
+				i++;
+				cont++;
+				
 				break;
 			case 2:
+				cout<<"HISTORIAL"<<endl;
+				cout<<"........."<<endl;
+				for(int i=0; i<cont; i++)
+				{
+					if(historial[i]!=0)
+					{
+						cout<<"suma "<<i+1<<" : "<<historial[i]<<endl;	
+					}
+				}
 				break;
 			default:
 				break;
