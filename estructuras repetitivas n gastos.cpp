@@ -2,8 +2,8 @@
 using namespace std;
 int main()
 {
-	int op, cont;
-    double gasto, historial[100];
+	int opcion, cont;
+    double gasto, H[100];
     double suma=0;
     int i=0;
     string resp, nombre, user, clave;
@@ -16,8 +16,8 @@ int main()
     	cout<<"1. sumar "<<endl;
     	cout<<"2. historial"<<endl;
     	cout<<"0. salir "<<endl;
-    	cin>>op;
-    	switch(op)
+    	cin>>opcion;
+    	switch(opcion)
     	{
     		case 1:
     			cout<<"Ingrese su nombre: "; cin>>nombre;
@@ -30,7 +30,7 @@ int main()
 				while(resp=="si");
 				cout<<" gasto total: S/. " <<suma<<endl;
 				
-				historial[i]=suma;
+				H[i]=suma;
 				i++;
 				cont++;
 				
@@ -40,9 +40,9 @@ int main()
 				cout<<"........."<<endl;
 				for(int i=0; i<cont; i++)
 				{
-					if(historial[i]!=0)
+					if(H[i]!=0)
 					{
-						cout<<"suma "<<i+1<<" : "<<historial[i]<<endl;	
+						cout<<"suma "<<i+1<<" : "<<H[i]<<endl;	
 					}
 				}
 				break;
@@ -50,7 +50,7 @@ int main()
 				break;
 		}
     }
-    while(op!=0);
+    while(opcion!=0);
     cout<<"GRACIAS POR USAR NUESTRO SISTEMA DE CALCULOS ";
     return 0;
 }
