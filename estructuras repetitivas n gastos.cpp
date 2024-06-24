@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
 	int opcion, cont;
-    double gasto, historial[100];
+    double gasto, H[100];
     double suma=0;
     int i=0;
     string resp, nombre, user, clave;
@@ -30,7 +30,7 @@ int main()
 				while(resp=="si");
 				cout<<" gasto total: S/. " <<suma<<endl;
 				
-				historial[i]=suma;
+				H[i]=suma;
 				i++;
 				cont++;
 				
@@ -40,9 +40,9 @@ int main()
 				cout<<"........."<<endl;
 				for(int i=0; i<cont; i++)
 				{
-					if(historial[i]!=0)
+					if(H[i]!=0)
 					{
-						cout<<"suma "<<i+1<<" : "<<historial[i]<<endl;	
+						cout<<"suma "<<i+1<<" : "<<H[i]<<endl;	
 					}
 				}
 				break;
