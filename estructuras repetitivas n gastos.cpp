@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-	int op, cont;
+	int opcion, cont;
     double gasto, historial[100];
     double suma=0;
     int i=0;
@@ -16,8 +16,8 @@ int main()
     	cout<<"1. sumar "<<endl;
     	cout<<"2. historial"<<endl;
     	cout<<"0. salir "<<endl;
-    	cin>>op;
-    	switch(op)
+    	cin>>opcion;
+    	switch(opcion)
     	{
     		case 1:
     			cout<<"Ingrese su nombre: "; cin>>nombre;
@@ -50,7 +50,7 @@ int main()
 				break;
 		}
     }
-    while(op!=0);
+    while(opcion!=0);
     cout<<"GRACIAS POR USAR NUESTRO SISTEMA DE CALCULOS ";
     return 0;
 }
